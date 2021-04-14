@@ -1,5 +1,5 @@
 import React from "react"
-import "./FeaturedCard.scss"
+import "./scss/Card.scss"
 
 type Props = {
     picsumId: string,

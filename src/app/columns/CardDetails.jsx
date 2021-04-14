@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react"
-import "./FeaturedCard.scss"
+import "./scss/CardDetails.scss"
 import {useParams} from "react-router";
 import {CardDto} from "../data/CardDto";
 import {cardsService} from "../data/CardsService";

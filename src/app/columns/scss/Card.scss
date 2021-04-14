@@ -1,0 +1,27 @@
+.app-card{
+  width: 100%;
+  border: solid 0.2rem #404345;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.app-card .img-overlay {
+  top: unset!important;
+  padding: 0!important;
+}
+
+.app-card .title {
+  background-color: rgba(0, 0, 0, 0.65)!important;
+  margin-bottom: 0!important;
+  padding-bottom: 0!important;
+  padding-top: 0.5rem!important;
+  padding-left: 0.5rem!important;
+}
+
+.app-card .stars {
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+  padding-bottom: 1rem!important;
+  background-color: rgba(0, 0, 0, 0.75)!important;
+  padding-left: 0.5rem!important;
+}

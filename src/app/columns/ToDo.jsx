@@ -18,7 +18,7 @@ export function ToDo() {
 
     return <>
         <div className="row row-cols-1 app-featured">
-            <h1 className="title">Pick your next meal</h1>
+            <h1 className="title">Todo</h1>
         </div>
         <div className="row row-cols-2">
             {cards.map(meal => (
