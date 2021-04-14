@@ -16,19 +16,25 @@ export function ToDo() {
         return () => replaySubject?.unsubscribe()
     }, [])
 
-    return <>
+    function onAdd() {
+        let c = new CardDto();
+        c.id = 1;
+        c.name = "ceva";
+        return setCards([c]);
+    }
+    return <div onDoubleClick={() => onAdd()}>
         <div className="row row-cols-1 app-featured">
             <h1 className="title">Todo</h1>
         </div>
         <div className="row row-cols-2">
-            {cards.map(meal => (
+            {cards.map(card => (
                 <div className="col" key={key.next()}>
-                    <Link to={"cards/" + meal.id} key={key.next()}>
-                        <Card picsumId={meal.id}
-                                 name={meal.name}/>
+                    <Link to={"cards/" + card.id} key={key.next()}>
+                        <Card picsumId={card.id}
+                                 name={card.name}/>
                     </Link>
                 </div>
             ))}
         </div>
-    </>
+    </div>
 }
