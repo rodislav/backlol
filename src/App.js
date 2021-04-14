@@ -2,6 +2,10 @@ import './App.css';
 import {ToDo} from "./app/columns/ToDo";
 import {CardDetails} from "./app/columns/CardDetails";
 import {Route} from "react-router-dom";
+import {InProgress} from "./app/columns/InProgress";
+import {Blocked} from "./app/columns/Blocked";
+import {FollowUp} from "./app/columns/FollowUp";
+import {Done} from "./app/columns/Done";
 
 export const API_HOST = "http://localhost:8000/api"
 export const API_VERSION = "v1"
@@ -15,10 +19,16 @@ function App() {
                     <ToDo />
                 </div>
                 <div className="col-sm">
-                    One of three columns
+                    <InProgress />
                 </div>
                 <div className="col-sm">
-                    One of three columns
+                    <Blocked />
+                </div>
+                <div className="col-sm">
+                    <FollowUp />
+                </div>
+                <div className="col-sm">
+                    <Done />
                 </div>
             </div>
         </div>
